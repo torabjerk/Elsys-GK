@@ -7,7 +7,7 @@ char ssid[] = SECRET_SSID;        // your network SSID (name)
 char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as key for WEP)
 int status = WL_IDLE_STATUS;     // the WiFi radio's status
 
-#define SensorPin A0; //Defining what pin the temp sensor is connected to
+int sensorPin = A0; //Defining what pin the temp sensor is connected to
 
 char server[] = "folk.ntnu.no"; //Connects to the folk.ntnu server
 
@@ -36,7 +36,7 @@ void setup() {
 }
 
 void loop() {
-  int reading = analogRead(SensorPin); //Reads the value of the sensor
+  int reading = analogRead(sensorPin); //Reads the value of the sensor
   float voltage = reading * 5.0;
   voltage /= 1024.0;
   float temperatureC = (voltage - 0.5) * 100 ; // Derives the temperatur in celcius
