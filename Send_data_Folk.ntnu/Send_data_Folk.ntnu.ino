@@ -7,12 +7,12 @@ char ssid[] = SECRET_SSID;        // your network SSID (name)
 char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as key for WEP)
 int status = WL_IDLE_STATUS;     // the WiFi radio's status
 
-int sensorPin = A0; //Defining what pin the temp sensor is connected to
+int sensorPin = A0; //Defining what pin thesensor is connected to
 
 char server[] = "folk.ntnu.no"; //Connects to the folk.ntnu server
 
 String postData;
-String postVariable = "temp="; 
+String postVariable = "value="; 
 
 WiFiClient client;
 
@@ -38,11 +38,8 @@ void setup() {
 void loop() {
   int reading = analogRead(sensorPin); //Reads the value of the sensor
   float voltage = reading * 5.0;
-  voltage /= 1024.0;
-  float temperatureC = (voltage - 0.5) * 100 ; // Derives the temperatur in celcius
   
-
-  postData = postVariable + temperatureC; 
+  postData = postVariable + voltage; 
 
   if (client.connect(server, 80)) {
     client.println("POST /torakb/test/post.php HTTP/1.1"); //Remeber to change this to match your folk.ntnu server.
