@@ -11,7 +11,7 @@ Dette er en fin kode som kan brukes for å dobbelsjekke at dere får til å komm
 
 Mappen "Send data til folk.ntnu fra Arduino wifi" inneholder Arduino-kode for å sende data til deres folk.ntnu/brukernavn server.
 Den inneholder også koden post.php som dere skal legge inn på deres server. 
-Se "Guide til å opp på folk.ntnu fra Arduino wifi".
+Se "Guide til å laste opp på folk.ntnu fra Arduino wifi".
 
 Om dere sliter med å koble dere til folk.ntnu nettverksområde via windows så kan dere se på "Guide til Folk.ntnu for windows"
 
@@ -24,5 +24,5 @@ Det er også lagt til en egen arduinokode som sender de tre variablene: temperat
 Disse filene ligger i mappen "Kode til folk.ntnu".
 
 Python_wiring er et dokument som tar for seg en sammenlikning av to programmeringsspråkene, wiring og python. 
-Wiring er programmeringen som skrives i Arduino IDE. 
+Wiring er programmeringsspråket som skrives i Arduino IDE. 
 I slutten av dokumentet er det lagt ved ressurser for å ﬁnne formler, oppbygning og syntaks til wiringprogrammering i Arduino IDE.
