@@ -1,9 +1,9 @@
-Elsys GK
+## Elsys GK
 
 Mappen "kode-introuker" inneholder koden som er for lang til at det er forventet at dere skriver det inn selv. 
 Dette er til de tre først ukene i ELSYS grunnkurs.
 
-Mappen "kode-NFC-Arduino" inneholder en kode for et enkelt åpne/lukke-system for komponenten https://www.waveshare.com/wiki/PN532_NFC_HAT#Arduino_examples.
+Mappen "kode-NFC-Arduino" inneholder en kode for et enkelt åpne/lukke-system for komponenten [PN532 NFC HAT](https://www.waveshare.com/wiki/PN532_NFC_HAT#Arduino_examples).
 Hvis dere bruker en annen NFC-leser er det mulig at denne koden ikke fungerer, men dere kan fortsatt ta inspirasjon til hvordan dere kan utforme et åpne/lukke-system eller lignende.
 
 Mappen "ping-folk.ntnu" inneholder kode for å å pinge deres folk.ntnu/brukernavn server ved hjelp av Arduino WiFi REV2. 
@@ -18,7 +18,7 @@ Om dere sliter med å koble dere til folk.ntnu nettverksområde via Windows så 
 Mappen "kode-folk.ntnu" inneholder kode for å laste opp data fra The Things Uno til folk.ntnu/brukernavn. 
 Dere kan også bruke html- og php-kodene til å laste opp data fra Arduino eller Raspberry Pi om dere ønsker.
 
-For en bedre guide til bruken av The Things Uno se på README.md fra https://github.com/andestro/ttn-http-integration/blob/master/README.md.
+For en bedre guide til bruken av The Things Uno se på README.md fra [et tidligere repo](https://github.com/andestro/ttn-http-integration/blob/master/README.md).
 Det er gjort endringer i decoder.js, save-tempant og hjemmeside-tempant der det er lagt til en ny variabel `value`.
 Det er også lagt til en egen Arduino-kode som sender de tre variablene: `temperature` , `count` og `value`.
 Disse filene ligger i mappen "kode-folk.ntnu".
